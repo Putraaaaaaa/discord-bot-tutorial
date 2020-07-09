@@ -1,11 +1,6 @@
 # discord-bot-tutorial
- ### by [rnggadosen._#3854]((https://discord.gg/6NpEfbM))
 
-
-# [TUTORIAL](https://www.youtube.com/watch?v=cVVnDEOdldw)
-
-
-
+[Tutorial Membuat Discord Bot](https://www.youtube.com/watch?v=cVVnDEOdldw)
 
 # Link
-[Donate](https://saweria.co/donate/rayhantech) | [Discord Server](https://discord.gg/6NpEfbM) | [Discord Bots](https://top.gg/user/585371124766998528) | [Donasi Tim](https://saweria.co/clientdev)
+[Donasi Tim](https://saweria.co/clientdev) | [Discord Server](https://discord.gg/6NpEfbM) | [YouTube](https://www.youtube.com/channel/UCV6c67PLrgc6CWNzFXiVQSA/) | [Instagram](https://instagram.com/clientdev.id)
