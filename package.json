@@ -13,7 +13,8 @@
     "express": "^4.17.1",
     "discord.js": "^12.2.0",
     "http": "^0.0.0",
-    "snekfetch": "^4.0.4"
+    "snekfetch": "^4.0.4",
+    "quick.db": "^7.1.1"
   },
   "engines": {
     "node": "12.x"
