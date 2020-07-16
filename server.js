@@ -30,9 +30,33 @@ let args = message.content.slice(prefix.length).trim().split(" ");
 let cmd = args.shift().toLowerCase();
 let command = cmd;
   
-if(command === "ping") {
-message.reply(`:ping_pong: Pong! ${client.ws.ping}ms`)
-}
 
+
+let commandFiles;
+try{
+  commandFiles = require(`./commands/${cmd}.js`)
+} catch (err) {
+  return message.reply("Command Not Found")
+}
+const db = require("quick.db")
+const now = Date.now()
+if(db.has(`cd_${message.author.id}`)) {
+  const expirationTime = db.get(`cd_${message.author.id}`) + 3000
+  if(now < expirationTime) {
+  const timeLeft = (expirationTime - now) / 1000;
+		return message.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${cmd}\` command.`);
+  }
+}
+  db.set(`cd_${message.author.id}`, now);
+  setTimeout(() => {
+    db.delete(`cd_${message.author.id}`)
+  },3000)
+try {
+  commandFiles.run(client, message, args)
+} catch (err) {
+  } finally {
+    console.log(`${message.author.tag} menggunakan command ${prefix}${cmd}`)
+  }
+  
 });
 client.login(process.env.TOKEN);
