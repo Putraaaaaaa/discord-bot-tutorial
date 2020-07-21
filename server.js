@@ -2,18 +2,28 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 //UPTIME ROBOT (WEB)
 const { get } = require("snekfetch");
-const http = require("http");
-const express = require("express");
+const express = require('express');
+const http = require('http');
 const app = express();
 app.get("/", (request, response) => {
-  console.log("Pinging");
+  
   response.sendStatus(200);
-})
+});
+
 app.listen(process.env.PORT);
 setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 6000);
+// we've started you off with Express,
+// but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
-http.get('http://discord-tutori4l.glitch.me/');
-}, 280000);
+// http://expressjs.com/en/starter/static-files.html
+app.use(express.static("public"));
+
+// http://expressjs.com/en/starter/basic-routing.html
+app.get("/", (request, response) => {
+  response.status(200).send("OK");
+});
 
 client.on("ready", async () => {
   console.log(`${client.user.tag} sudah online!`);
