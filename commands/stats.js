@@ -4,7 +4,7 @@ const { platform, arch, cpus } = require('os');
 module.exports.run = async (bot, message, args) => {
 
  const model = cpus()[0].model + " " + arch(),
-       tanggal_buat = require('ms')(bot.user.createdAt());
+       tanggal_buat = bot.user.createdAt
 
  const embed = new MessageEmbed()
  .setColor('RANDOM') // RANDOM HEX COLOR
