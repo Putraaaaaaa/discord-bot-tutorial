@@ -29,6 +29,7 @@ seperti Tutorial #1, dsb.
 Projek ini menggunakan lisensi MIT
 
 Dibuat oleh Tim Client Developer:
-Staff #1 -> rayhantech
-Staff #2 -> rnggadosen._
-Staff #4 -> Tada
+
+- Staff #1 -> rayhantech
+- Staff #2 -> rnggadosen._
+- Staff #4 -> Tada
