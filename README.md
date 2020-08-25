@@ -1,7 +1,5 @@
 # discord-bot-tutorial
 
-![DIRGAHAYU INDONESIAKU](https://cdn.discordapp.com/attachments/733256504794152990/744766292673953853/20200817_095551.jpg)
-
 ## **__LIST TUTORIAL__**
 1.  [Tutorial #1](https://youtu.be/cVVnDEOdldw)
 2.  [Tutorial #2](https://youtu.be/nRWVHmyHftk) `Tidak disarankan, mending pakai tutorial ke #8`
